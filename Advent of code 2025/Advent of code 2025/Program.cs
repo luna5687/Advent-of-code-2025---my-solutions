@@ -29,10 +29,9 @@ namespace Day1
                     if (ValueofDial - Amount < 0)
                     {
                         ValueofDial = 100 + (ValueofDial - Amount);
-                        Password++;
+                   
                         while (ValueofDial < 0)
                         {
-                            Password++;
                             ValueofDial = 100 + ValueofDial;
                         }
                         
@@ -43,18 +42,18 @@ namespace Day1
                 {
                     if (ValueofDial + Amount > 99)
                     {
-                        Password++;
+                       
                         ValueofDial = (ValueofDial + Amount) - 100;
                         while (ValueofDial > 99)
                         {
-                            Password++;
+                           
                             ValueofDial = ValueofDial - 100;
                         }
                     }
                     else ValueofDial = ValueofDial + Amount;
                 }
                 Console.WriteLine(Password + "," + ValueofDial+","+LorR+","+Rotation);
-               // if (ValueofDial == 0) Password++;
+                if (ValueofDial == 0) Password++;
             }
             SR.Close();
             Console.WriteLine(Password);
