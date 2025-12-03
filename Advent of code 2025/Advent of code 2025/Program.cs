@@ -54,7 +54,7 @@ namespace Day1
                     else ValueofDial = ValueofDial + Amount;
                 }
                 Console.WriteLine(Password + "," + ValueofDial+","+LorR+","+Rotation);
-                if (ValueofDial == 0) Password++;
+               // if (ValueofDial == 0) Password++;
             }
             SR.Close();
             Console.WriteLine(Password);
